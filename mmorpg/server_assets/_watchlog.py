@@ -18,7 +18,7 @@ def printStatus():
 	os.system("python $KBE_ROOT/kbe/tools/server/pycluster/cluster_controller.py >> stressstatus.log")
 	# iftop >= iftop-1.0pre3
 	# http://www.ex-parrot.com/~pdw/iftop/
-	os.system("/usr/local/sbin/iftop -t -s 1 >> stressstatus.log")
+	os.system("/usr/sbin/iftop -t -s 1 >> stressstatus.log")
 	print("printStatus(%d)" % count)
 	count += 1
 

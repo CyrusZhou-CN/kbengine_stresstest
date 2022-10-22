@@ -55,6 +55,26 @@
 			<default>
 				<!-- <host> localhost </host> -->
 				<!-- <databaseName> kbe </databaseName> -->
+				<host> MARIADB_HOST </host>										<!-- Type: String -->
+				<port> MARIADB_PORT </port>												<!-- Type: Integer -->
+
+				<!-- 数据库账号验证 
+					（Database auth)
+				-->
+				<auth>  
+					<username> MARIADB_USER </username>									<!-- Type: String -->
+					<password> MARIADB_PASSWORD </password>							<!-- Type: String -->
+					
+					<!-- 为true则表示password是加密(rsa)的, 可防止明文配置 
+						(is true, password is RSA)
+					-->
+					<encrypt> false </encrypt>
+				</auth>
+
+				<!-- 数据库名称 
+					(Database name)
+				-->
+				<databaseName> MARIADB_DATABASE </databaseName> 
 			</default>
 		</databaseInterfaces>
 		
